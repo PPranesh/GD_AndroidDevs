@@ -20,4 +20,6 @@
     <string name="open_browser">Open Browser</string>
     <string name="open_Map">Open Map</string>
     <string name="open_call">Open Call</string>
+    <string name="enter_any_number">Enter any number</string>
+    <string name="click_to_add">click to add</string>
 </resources>

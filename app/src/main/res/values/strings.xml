@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GD_Android Dev\'s</string>
+
+    <string name="incc">Increment</string>
+    <string name="dec">Decrement</string>
+    <string name="empty">click to change</string>
+    <string name="zero">Reset Number</string>
+
+    <string name="myPara">Application According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows:\nDesktop Applications such as acrobat reader, media player, antivirus, etc.Web Applications such as irctc.co.in, javatpoint.com, etc.\n\nEnterprise Applications such as banking applications.\n\t\tMobile\n\t\tEmbedded System\n\t\tSmart Card\n\t\tRobotics\n\t\tGames, etc.\n\nTypes of Java Applications\n\t\tThere are mainly 4 types of applications that can be created using Java programming:\n\n1) Standalone Application\n\t\tStandalone applications are also known as desktop applications or window-based applications. These are traditional software that we need to install on every machine. Examples of standalone application are Media player, antivirus, etc. AWT and Swing are used in Java for creating standalone applications.\n\n2) Web Application\n\t\tAn application that runs on the server side and creates a dynamic page is called a web application. Currently, Servlet, JSP, Struts, Spring, Hibernate, JSF, etc. technologies are used for creating web applications in Java.\n\n3) Enterprise Application\n\t\tAn application that is distributed in nature, such as banking applications, etc. is called enterprise application. It has advantages of the high-level security, load balancing, and clustering. In Java, EJB is used for creating enterprise applications.\n\n4) Mobile Application\n\t\tAn application which is created for mobile devices is called a mobile application. Currently, Android and Java ME are used for creating mobile applications.</string>
+    <string name="scroll_view_page">Scroll View Page</string>
+    <string name="prev_page">Prev Page</string>
+    <string name="next_page">Next Page</string>
+    <string name="intent_s_activity">Intent\'s Activity</string>
+    <string name="enter_any_name">Enter any name</string>
+    <string name="result_from_intent">Result from Intent</string>
+
+    <string name="implicit_intent">Implicit Intent</string>
+
+
+    <string name="open_browser">Open Browser</string>
+    <string name="open_Map">Open Map</string>
+    <string name="open_call">Open Call</string>
+</resources>

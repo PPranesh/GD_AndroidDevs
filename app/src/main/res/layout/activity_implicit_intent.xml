@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LayoutBackGround"
+    tools:context=".ImplicitIntent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="55dp"
+        android:text="@string/implicit_intent" />
+
+    <Button
+        android:id="@+id/browser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/open_browser"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="implicitClick"
+        android:background="@color/ButtonColour"
+        android:textColor="@color/LayoutBackGround"
+        android:layout_marginTop="150dp" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/open_call"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/LayoutBackGround"
+        android:onClick="implicitClick"
+        android:background="@color/ButtonColour"
+        android:layout_marginTop="220dp" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/open_Map"
+        android:textSize="18sp"
+        android:textColor="@color/LayoutBackGround"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/ButtonColour"
+        android:onClick="implicitClick"
+        android:layout_marginTop="290dp" />
+
+
+
+
+
+
+
+</RelativeLayout>

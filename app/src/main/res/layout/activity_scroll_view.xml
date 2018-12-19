@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollView">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scroll_view_page"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_margin="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/ButtonBackground"
+            android:text="@string/myPara"/>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:text="@string/prev_page"
+        android:background="@color/ButtonBackground"
+        android:textColor="@color/LayoutBackGround"
+        android:textSize="18sp"
+        android:onClick="PrevPage"
+        android:layout_marginStart="20dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:background="@color/ButtonBackground"
+        android:textColor="@color/LayoutBackGround"
+        android:textSize="18sp"
+        android:onClick="NextPage"
+        android:layout_marginStart="200dp"
+        android:text="@string/next_page" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/LayoutBackGround">
+
+        <Button
+            android:id="@+id/topButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:background="@color/ButtonBackground"
+            android:text="@string/incc" />
+
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:text="@string/empty"
+            android:gravity="center"
+            android:textColor="@color/TextColour"
+            android:textSize="50sp" />
+
+
+        <Button
+            android:onClick="clickk"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/ButtonBackground"
+            android:text="@string/dec" />
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:onClick="nextPage"
+            android:background="@color/ButtonBackground"
+            android:layout_marginTop="1dp"
+            android:text="@string/next_page" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/simpleTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/zero"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/TextColour"
+        android:textSize="20sp" />
+
+</LinearLayout>

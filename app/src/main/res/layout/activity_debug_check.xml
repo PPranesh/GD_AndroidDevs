@@ -17,7 +17,8 @@
         android:hint="@string/enter_any_number"
         android:gravity="center"
         android:inputType="number"
-        android:background="@color/TVBackground"/>
+        android:background="@color/TVBackground"
+        android:autofillHints="" tools:targetApi="o"/>
 
 
     <EditText
@@ -29,7 +30,8 @@
         android:hint="@string/enter_any_number"
         android:gravity="center"
         android:inputType="number"
-        android:background="@color/TVBackground"/>
+        android:background="@color/TVBackground"
+        android:autofillHints="" />
 
     <Button
         android:layout_width="300dp"

@@ -26,7 +26,9 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:textSize="22sp"
-        android:hint="@string/enter_any_name"/>
+        android:hint="@string/enter_any_name"
+        android:inputType=""
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/intentnewPage"

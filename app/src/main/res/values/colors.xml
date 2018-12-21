@@ -5,10 +5,12 @@
     <color name="colorAccent">#D81B60</color>
 
 
-    <color name="LayoutBackGround">#FFEB3B</color>
-    <color name="ButtonBackground">#2ECC71</color>
-    <color name="ButtonColour">#1976D2</color>
-    <color name="TextColour">#F44336</color>
-    <color name="TVBackground">#EEEEEE</color>
-    <color name="newColor">#0000FF</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="lightGreen">#2ECC71</color>
+    <color name="lightBlue">#1976D2</color>
+    <color name="lightRed">#F44336</color>
+    <color name="colorWhile">#eeeeee</color>
+    <color name="darkBlue">#0000FF</color>
+    <color name="lightGray">#F2F3F4</color>
+    <color name="darkYellow">#D4AC0D</color>
 </resources>

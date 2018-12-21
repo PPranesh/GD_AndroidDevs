@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/LayoutBackGround"
+    android:background="@color/colorYellow"
     tools:context=".IntentActivity">
 
 
@@ -39,6 +39,7 @@
         android:layout_marginEnd="30dp"
         android:text="@string/next_page"
         android:textSize="20sp"
-        android:textColor="@color/TextColour"/>
+        android:background="@color/lightGreen"
+        android:textColor="@color/colorYellow"/>
 
 </RelativeLayout>

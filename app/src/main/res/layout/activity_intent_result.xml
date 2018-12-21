@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/LayoutBackGround"
+    android:background="@color/colorYellow"
     tools:context=".IntentResult">
 
 
@@ -25,7 +25,7 @@
         android:text=""
         android:gravity="center"
         android:textSize="25sp"
-        android:textColor="@color/TextColour"
+        android:textColor="@color/lightRed"
         android:layout_marginTop="150dp"/>
 
 
@@ -37,8 +37,8 @@
         android:onClick="mapActivity"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background="@color/ButtonBackground"
+        android:background="@color/lightGreen"
         android:text="@string/next_page"
         android:textSize="20sp"
-        android:textColor="@color/ButtonColour"/>
+        android:textColor="@color/lightBlue"/>
 </RelativeLayout>

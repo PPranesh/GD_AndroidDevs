@@ -22,4 +22,12 @@
     <string name="open_call">Open Call</string>
     <string name="enter_any_number">Enter any number</string>
     <string name="click_to_add">click to add</string>
+    <string name="ui_inputs_check">UI Inputs Check</string>
+    <string name="tamil">Tamil</string>
+    <string name="english">English</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="alertdialog">AlertDialog</string>
+    <string name="dialog">Dialog</string>
+    <string name="on">ON</string>
 </resources>

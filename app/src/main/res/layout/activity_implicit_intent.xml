@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/LayoutBackGround"
+    android:background="@color/colorYellow"
     tools:context=".ImplicitIntent">
 
 
@@ -25,8 +25,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:onClick="implicitClick"
-        android:background="@color/ButtonColour"
-        android:textColor="@color/LayoutBackGround"
+        android:background="@color/lightBlue"
+        android:textColor="@color/colorYellow"
         android:layout_marginTop="150dp" />
 
     <Button
@@ -37,9 +37,9 @@
         android:textSize="18sp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:textColor="@color/LayoutBackGround"
+        android:textColor="@color/colorYellow"
         android:onClick="implicitClick"
-        android:background="@color/ButtonColour"
+        android:background="@color/lightBlue"
         android:layout_marginTop="220dp" />
 
     <Button
@@ -48,10 +48,10 @@
         android:layout_height="50dp"
         android:text="@string/open_Map"
         android:textSize="18sp"
-        android:textColor="@color/LayoutBackGround"
+        android:textColor="@color/colorYellow"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background="@color/ButtonColour"
+        android:background="@color/lightBlue"
         android:onClick="implicitClick"
         android:layout_marginTop="290dp" />
 
@@ -62,26 +62,10 @@
         android:layout_height="50dp"
         android:text="@string/next_page"
         android:textSize="18sp"
-        android:textColor="@color/LayoutBackGround"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="@color/ButtonColour"
+        android:textColor="@color/colorYellow"
+        android:layout_marginStart="120dp"
+        android:background="@color/lightBlue"
         android:onClick="nxtpgg"
         android:layout_marginTop="400dp" />
-
-
-    <!--<Button-->
-        <!--android:id="@+id/prevpg"-->
-        <!--android:layout_width="150dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:text="@string/prev_page"-->
-        <!--android:textSize="18sp"-->
-        <!--android:textColor="@color/LayoutBackGround"-->
-        <!--android:layout_marginStart="210dp"-->
-        <!--android:layout_marginEnd="30dp"-->
-        <!--android:background="@color/ButtonColour"-->
-        <!--android:onClick="prevpgg"-->
-        <!--android:layout_marginTop="400dp" />-->
-
 
 </RelativeLayout>

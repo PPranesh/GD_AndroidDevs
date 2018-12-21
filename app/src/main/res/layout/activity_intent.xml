@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/LayoutBackGround"
+    android:background="@color/colorYellow"
     tools:context=".IntentActivity">
 
 
@@ -28,7 +28,7 @@
         android:textSize="22sp"
         android:hint="@string/enter_any_name"
         android:inputType=""
-        android:autofillHints="" />
+        android:autofillHints="" tools:targetApi="o"/>
 
     <Button
         android:id="@+id/intentnewPage"
@@ -39,6 +39,6 @@
         android:layout_marginEnd="30dp"
         android:text="@string/next_page"
         android:textSize="20sp"
-        android:textColor="@color/TextColour"/>
+        android:textColor="@color/lightRed"/>
 
 </RelativeLayout>

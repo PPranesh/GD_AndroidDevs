@@ -68,7 +68,7 @@ public class DebugCheck extends AppCompatActivity {
     }
 
     public void nxtpg(View view) {
-        startActivity(new Intent(DebugCheck.this,testing.class));
+        startActivity(new Intent(DebugCheck.this,InputChecks.class));
     }
 
 

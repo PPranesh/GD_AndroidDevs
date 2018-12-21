@@ -20,8 +20,8 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:background="@color/ButtonBackground"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGreen"
             android:text="@string/myPara"/>
 
     </ScrollView>
@@ -32,8 +32,8 @@
         android:layout_marginTop="400dp"
         android:gravity="center"
         android:text="@string/prev_page"
-        android:background="@color/ButtonBackground"
-        android:textColor="@color/LayoutBackGround"
+        android:background="@color/lightGreen"
+        android:textColor="@color/colorYellow"
         android:textSize="18sp"
         android:onClick="PrevPage"
         android:layout_marginStart="20dp"
@@ -44,8 +44,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="400dp"
         android:gravity="center"
-        android:background="@color/ButtonBackground"
-        android:textColor="@color/LayoutBackGround"
+        android:background="@color/lightGreen"
+        android:textColor="@color/colorYellow"
         android:textSize="18sp"
         android:onClick="NextPage"
         android:layout_marginStart="200dp"

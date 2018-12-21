@@ -13,14 +13,14 @@
         android:layout_marginTop="50dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:background="@color/LayoutBackGround">
+        android:background="@color/colorYellow">
 
         <Button
             android:id="@+id/topButton"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:onClick="onClick"
-            android:background="@color/ButtonBackground"
+            android:background="@color/lightGreen"
             android:text="@string/incc" />
 
 
@@ -30,7 +30,7 @@
             android:layout_height="250dp"
             android:text="@string/empty"
             android:gravity="center"
-            android:textColor="@color/TextColour"
+            android:textColor="@color/lightRed"
             android:textSize="50sp" />
 
 
@@ -38,7 +38,7 @@
             android:onClick="clickk"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:background="@color/ButtonBackground"
+            android:background="@color/lightGreen"
             android:text="@string/dec" />
 
 
@@ -47,7 +47,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:onClick="nextPage"
-            android:background="@color/ButtonBackground"
+            android:background="@color/lightGreen"
             android:layout_marginTop="1dp"
             android:text="@string/next_page" />
 
@@ -60,7 +60,7 @@
         android:text="@string/zero"
         android:gravity="center"
         android:layout_gravity="center"
-        android:textColor="@color/TextColour"
+        android:textColor="@color/lightRed"
         android:textSize="20sp" />
 
 </LinearLayout>

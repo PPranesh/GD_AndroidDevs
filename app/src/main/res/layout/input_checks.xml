@@ -15,96 +15,110 @@
         android:textColor="@color/colorYellow"
         android:textSize="36sp" />
 
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="110dp"
-        android:textSize="30sp"
-        android:textColor="@color/colorWhile"
-        android:text="@string/english" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox1"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="60dp"
-        android:textSize="30sp"
-        android:layout_marginBottom="0dp"
-        android:text="@string/tamil"
-        android:textColor="@color/colorWhile" />
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:textSize="30sp"
+            android:background="@color/lightGreen"
+            android:textColor="@color/colorWhile"
+            android:text="@string/english" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/lightGreen"
+            android:textSize="30sp"
+            android:text="@string/tamil"
+            android:textColor="@color/colorWhile" />
+
+    </LinearLayout>
+
 
     <RadioGroup
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_alignStart="@+id/checkBox1"
-        android:layout_alignParentTop="true"
         android:background="@color/darkYellow"
-        android:layout_marginTop="500dp"
-        android:layout_marginBottom="5dp">
+        android:layout_marginTop="345dp"
+        android:layout_marginStart="70dp"
+        android:orientation="vertical"  >
 
-        <RadioButton
-            android:id="@+id/radioButton1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@color/colorWhile"
-            android:textSize="30sp"
-            android:text="@string/male" />
+            android:layout_height="50dp">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="30sp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="-50dp"
-            android:textColor="@color/colorWhile"
-            android:text="@string/female" />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="0dp"
+                android:textColor="@color/colorWhile"
+                android:textSize="30sp"
+                android:onClick="radioclick"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="radioclick"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhile"
+                android:text="@string/female" />
+
+        </LinearLayout>
+
     </RadioGroup>
 
-    <Button
-        android:id="@+id/dialogbtn"
-        android:layout_width="wrap_content"
-        android:onClick="dialog"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="85dp"
-        android:layout_marginBottom="153dp"
-        android:text="@string/dialog" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <Button
+            android:id="@+id/dialogbtn"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:onClick="dialog"
+            android:text="@string/dialog"
+            android:textSize="22sp"
+            android:background="@color/lightBlue"/>
 
 
-    <Button
-        android:id="@+id/alertdialogbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:onClick="alertDialog"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="245dp"
-        android:layout_marginBottom="153dp"
-        android:text="@string/alertdialog" />
+        <Button
+            android:id="@+id/alertdialogbtn"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:textSize="22sp"
+            android:onClick="alertDialog"
+            android:layout_marginStart="10dp"
+            android:background="@color/lightBlue"
+            android:text="@string/alertdialog" />
+
+    </LinearLayout>
 
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="196dp"
-        android:background="@color/colorWhile"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="160dp"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
         android:clickable="true"
         android:textSize="24sp"
         android:text="@string/on"
         android:focusable="true" />
-
 
 </RelativeLayout>

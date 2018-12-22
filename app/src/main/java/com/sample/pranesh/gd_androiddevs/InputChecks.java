@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -15,6 +17,7 @@ public class InputChecks extends AppCompatActivity {
 
     CheckBox cb1,cb2;
     ToggleButton tg1;
+    RadioButton rd1,rd2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +27,18 @@ public class InputChecks extends AppCompatActivity {
         cb1 = (CheckBox)findViewById(R.id.checkBox1);
         cb2 = (CheckBox)findViewById(R.id.checkBox2);
         tg1 = (ToggleButton)findViewById(R.id.toggleButton);
-
+        rd1 = (RadioButton) findViewById(R.id.radioButton1);
+        rd2 = (RadioButton) findViewById(R.id.radioButton2);
 
         tg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(tg1.isChecked()){
                     Toast.makeText(InputChecks.this,"Toggle is ON",Toast.LENGTH_SHORT).show();
+                    tg1.setBackgroundColor(getResources().getColor(R.color.darkGreen));
                 }else{
                     Toast.makeText(InputChecks.this,"Toggle is off",Toast.LENGTH_SHORT).show();
+                    tg1.setBackgroundColor(getResources().getColor(R.color.darkRed));
                 }
             }
         });
@@ -55,10 +61,9 @@ public class InputChecks extends AppCompatActivity {
                     Toast.makeText(InputChecks.this,"Tamil is selected",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(InputChecks.this,"Tamil is not selected",Toast.LENGTH_SHORT).show();
-                }            }
+                }
+            }
         });
-
-
     }
 
     public void dialog(View view) {
@@ -103,4 +108,22 @@ public class InputChecks extends AppCompatActivity {
         ab.show();
     }
 
+
+    public void radioclick(View view) {
+
+        if(!(rd1.isChecked() && rd2.isChecked())){
+            switch (view.getId()){
+                case R.id.radioButton1:
+                    Toast.makeText(InputChecks.this,"Male Selected",Toast.LENGTH_SHORT).show();
+                    break;
+
+                case R.id.radioButton2:
+                    Toast.makeText(InputChecks.this,"Female Selected",Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }else{
+            Toast.makeText(InputChecks.this,"Radio button is not selected",Toast.LENGTH_SHORT).show();
+        }
+
+    }
 }

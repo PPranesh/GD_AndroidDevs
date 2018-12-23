@@ -1,12 +1,21 @@
 package com.sample.pranesh.gd_androiddevs;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.MenuItemImpl;
 import android.util.Log;
+import android.view.ActionProvider;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -79,5 +88,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onResume();
         Log.e(TAG,"onResume");
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.simple_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+//        String a = this.getClass().getSimpleName();
+        switch (item.getItemId()){
+            case R.id.toast:
+                Toast.makeText(MainActivity.this,"Main Activity",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
+    }
+
 
 }

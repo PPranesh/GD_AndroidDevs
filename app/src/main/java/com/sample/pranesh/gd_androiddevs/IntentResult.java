@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class IntentResult extends AppCompatActivity {
 
@@ -65,5 +68,23 @@ public class IntentResult extends AppCompatActivity {
     public void mapActivity(View view) {
         Intent intent = new Intent(IntentResult.this,ImplicitIntent.class);
         startActivity(intent);
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.simple_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.toast:
+                Toast.makeText(this,"Intent Result Activity",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
     }
 }

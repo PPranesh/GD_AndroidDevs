@@ -10,11 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+
         </activity>
         <activity android:name=".ScrollView" />
         <activity android:name=".IntentActivity" />
@@ -22,8 +20,14 @@
         <activity android:name=".ImplicitIntent" />
         <activity android:name=".DebugCheck" />
         <activity android:name=".InputChecks">
+            <!--try here-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".LastPage"></activity>
     </application>
 
 </manifest>

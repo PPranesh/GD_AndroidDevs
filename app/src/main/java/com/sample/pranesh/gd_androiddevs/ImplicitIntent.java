@@ -6,7 +6,10 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class ImplicitIntent extends AppCompatActivity {
 
@@ -73,5 +76,23 @@ public class ImplicitIntent extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.e(TAG,"onResume");
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.simple_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.toast:
+                Toast.makeText(this,"Implicit Intent Activity",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
     }
 }

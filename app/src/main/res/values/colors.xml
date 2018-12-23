@@ -15,4 +15,6 @@
     <color name="darkYellow">#D4AC0D</color>
     <color name="darkGreen">#00FF00</color>
     <color name="darkRed">#CC0000</color>
+
+    <color name="sample">#F39C12</color>
 </resources>

@@ -30,12 +30,24 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="foregroundClipArt">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="72" />
+                                                <entry key="scalingPercent" value="155" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -47,8 +59,7 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="fafbff" />
-                                      <entry key="foregroundImage" value="C:\Users\Dell\Desktop\app_icon.png" />
-                                      <entry key="legacyIconShape" value="NONE" />
+                                      <entry key="foregroundImage" value="C:\Users\Dell\Desktop\NB_Icon_Mask_Shapes_Ext_02.gif" />
                                       <entry key="showGrid" value="true" />
                                     </map>
                                   </option>
@@ -63,6 +74,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>

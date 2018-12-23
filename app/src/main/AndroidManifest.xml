@@ -18,15 +18,16 @@
         <activity android:name=".IntentActivity" />
         <activity android:name=".IntentResult" />
         <activity android:name=".ImplicitIntent" />
-        <activity android:name=".DebugCheck" />
-        <activity android:name=".InputChecks">
+        <activity android:name=".DebugCheck" >
             <!--try here-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".InputChecks"/>
         <activity android:name=".LastPage"></activity>
     </application>
 

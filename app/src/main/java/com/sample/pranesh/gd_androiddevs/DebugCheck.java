@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -95,5 +96,39 @@ public class DebugCheck extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        switch(v.getId()){
+            case R.id.num1:
+                getMenuInflater().inflate(R.menu.floating_menu1,menu);
+                break;
 
+            case R.id.num2:
+                getMenuInflater().inflate(R.menu.floating_menu2,menu);
+                break;
+        }
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.cut:
+                Toast.makeText(DebugCheck.this,"Cut Pressed",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.clear:
+                Toast.makeText(DebugCheck.this,"Clear Pressed",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.copy:
+                Toast.makeText(DebugCheck.this,"Copy Pressed",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.share:
+                Toast.makeText(DebugCheck.this,"Share Pressed",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
+    }
 }

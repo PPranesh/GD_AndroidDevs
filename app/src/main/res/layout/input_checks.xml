@@ -47,19 +47,13 @@
         android:layout_height="50dp"
         android:background="@color/darkYellow"
         android:layout_marginTop="345dp"
-        android:layout_marginStart="70dp"
-        android:orientation="vertical"  >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
+        android:layout_marginStart="70dp" >
 
             <RadioButton
                 android:id="@+id/radioButton1"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:layout_weight="1"
-                android:layout_marginStart="0dp"
+                android:layout_marginStart="15dp"
                 android:textColor="@color/colorWhile"
                 android:textSize="30sp"
                 android:onClick="radioclick"
@@ -69,13 +63,12 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:layout_weight="1"
                 android:onClick="radioclick"
                 android:textSize="30sp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="150dp"
                 android:textColor="@color/colorWhile"
                 android:text="@string/female" />
-
-        </LinearLayout>
 
     </RadioGroup>
 
@@ -94,6 +87,8 @@
             android:onClick="dialog"
             android:text="@string/dialog"
             android:textSize="22sp"
+            android:textColor="@color/darkYellow"
+            style="?android:attr/buttonBarButtonStyle"
             android:background="@color/lightBlue"/>
 
 
@@ -103,7 +98,9 @@
             android:layout_height="60dp"
             android:textSize="22sp"
             android:onClick="alertDialog"
+            android:textColor="@color/darkYellow"
             android:layout_marginStart="10dp"
+            style="?android:attr/buttonBarButtonStyle"
             android:background="@color/lightBlue"
             android:text="@string/alertdialog" />
 

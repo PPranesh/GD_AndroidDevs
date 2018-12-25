@@ -35,8 +35,8 @@ public class DebugCheck extends AppCompatActivity {
     public void addnum(View view) {
         int a = Integer.parseInt(ed1.getText().toString());
         int b = Integer.parseInt(ed2.getText().toString());
-        int result = a+b;
-        tv1.setText(""+result);
+        int result = a + b;
+        tv1.setText("" + result);
     }
 
 

@@ -114,9 +114,6 @@ public class InputChecks extends AppCompatActivity {
     public void radioclick(View view) {
         if ((rd1.isChecked()) || (rd2.isChecked())) {
 
-//                if (rd1.isChecked()) {
-//
-//                    Toast.makeText(InputChecks.this, "Male Selected", Toast.LENGTH_SHORT).show();
             switch (view.getId()){
                 case R.id.radioButton1:
                     Toast.makeText(InputChecks.this,"Male Selected",Toast.LENGTH_SHORT).show();
@@ -130,8 +127,6 @@ public class InputChecks extends AppCompatActivity {
             }
         } else {
             Toast.makeText(InputChecks.this,"Radio button is not selected",Toast.LENGTH_SHORT).show();
-//            rd1.setChecked(false);
-//            rd2.setChecked(false);
         }
     }
 

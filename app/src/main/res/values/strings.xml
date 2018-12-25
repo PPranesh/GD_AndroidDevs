@@ -39,4 +39,10 @@
     <string name="clear">Clear</string>
     <string name="cut">Cut</string>
     <string name="simple_toast">Simple Toast</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logs_fragment">Logs Fragment</string>
+    <string name="calls_fragment">Calls Fragment</string>
+    <string name="contacts_layout">Contacts Layout</string>
 </resources>

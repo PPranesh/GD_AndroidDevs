@@ -21,7 +21,7 @@
         android:layout_marginTop="80dp">
 
         <CheckBox
-            android:id="@+id/checkBox1"
+            android:id="@+id/IN_checkBox1"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginStart="70dp"
@@ -31,7 +31,7 @@
             android:text="@string/english" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/IN_checkBox2"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:background="@color/lightGreen"
@@ -50,20 +50,20 @@
         android:layout_marginStart="70dp" >
 
             <RadioButton
-                android:id="@+id/radioButton1"
+                android:id="@+id/IN_radioButton1"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="15dp"
                 android:textColor="@color/colorWhile"
                 android:textSize="30sp"
-                android:onClick="radioclick"
+                android:onClick="IN_radioclick"
                 android:text="@string/male" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/IN_radioButton2"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:onClick="radioclick"
+                android:onClick="IN_radioclick"
                 android:textSize="30sp"
                 android:layout_marginTop="-50dp"
                 android:layout_marginStart="150dp"
@@ -84,7 +84,7 @@
             android:id="@+id/dialogbtn"
             android:layout_width="140dp"
             android:layout_height="60dp"
-            android:onClick="dialog"
+            android:onClick="IN_dialog"
             android:text="@string/dialog"
             android:textSize="22sp"
             android:textColor="@color/darkYellow"
@@ -97,7 +97,7 @@
             android:layout_width="175dp"
             android:layout_height="60dp"
             android:textSize="22sp"
-            android:onClick="alertDialog"
+            android:onClick="IN_alertDialog"
             android:textColor="@color/darkYellow"
             android:layout_marginStart="10dp"
             style="?android:attr/buttonBarButtonStyle"
@@ -107,7 +107,7 @@
     </LinearLayout>
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/IN_toggleButton"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"

@@ -20,17 +20,18 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "Main Activity - 1";
-    Button inc;
-    TextView num,res;
-    int k=0;
+    private Button inc;
+    private TextView num,res;
+    private int k=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inc = (Button)findViewById(R.id.topButton);
-        num = (TextView)findViewById(R.id.number);
-        res = (TextView)findViewById(R.id.simpleTextView);
+        inc = (Button)findViewById(R.id.MA_IncrementButton);
+        num = (TextView)findViewById(R.id.MA_OututDisplay);
+        res = (TextView)findViewById(R.id.MA_ResetButton);
         inc.setOnClickListener(this);
         res.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,14 +98,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-//        String a = this.getClass().getSimpleName();
+
         switch (item.getItemId()){
-            case R.id.toast:
+
+            case R.id.SM_toastMessage:
                 Toast.makeText(MainActivity.this,"Main Activity",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                Intent nxt = new Intent(MainActivity.this,ScrollView.class);
+                startActivity(nxt);
+                break;
+            case R.id.SM_PreviousPage:
+                Toast.makeText(MainActivity.this,"Previous Page",Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
     }
-
-
 }

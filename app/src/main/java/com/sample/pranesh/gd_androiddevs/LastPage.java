@@ -1,5 +1,6 @@
 package com.sample.pranesh.gd_androiddevs;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -23,9 +24,19 @@ public class LastPage extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
-            case R.id.toast:
-                Toast.makeText(this,"Last Activity",Toast.LENGTH_SHORT).show();
+
+            case R.id.SM_toastMessage:
+                Toast.makeText(LastPage.this,"Scroll View",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                Toast.makeText(LastPage.this,"Next Page",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.SM_PreviousPage:
+                Intent prev = new Intent(LastPage.this,NavigationPage.class);
+                startActivity(prev);
                 break;
         }
         return true;

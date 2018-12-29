@@ -16,17 +16,17 @@ import android.widget.Toast;
 public class DebugCheck extends AppCompatActivity {
 
     private static final String TAG = "Debug Check - 6";
-    TextView tv1;
-    EditText ed1,ed2;
+    private TextView tv1;
+    private EditText ed1,ed2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debug_check);
 
-        ed1 = (EditText) findViewById(R.id.num1);
-        ed2 = (EditText) findViewById(R.id.num2);
-        tv1 = (TextView)findViewById(R.id.numoutput);
+        ed1 = (EditText) findViewById(R.id.DC_EditTextNumber);
+        ed2 = (EditText) findViewById(R.id.DC_EditTextNumber2);
+        tv1 = (TextView)findViewById(R.id.DC_TextOutput);
 
         registerForContextMenu(ed1);
         registerForContextMenu(ed2);
@@ -70,11 +70,11 @@ public class DebugCheck extends AppCompatActivity {
         Log.e(TAG,"onResume");
     }
 
-    public void prevpg(View view) {
+    public void DC_prevpg(View view) {
         startActivity(new Intent(DebugCheck.this,ImplicitIntent.class));
     }
 
-    public void nxtpg(View view) {
+    public void DC_nxtpg(View view) {
         startActivity(new Intent(DebugCheck.this,InputChecks.class));
     }
 
@@ -88,9 +88,20 @@ public class DebugCheck extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
-            case R.id.toast:
-                Toast.makeText(this,"Debug Activity",Toast.LENGTH_SHORT).show();
+
+            case R.id.SM_toastMessage:
+                Toast.makeText(DebugCheck.this,"Debug Page",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                Intent nxt = new Intent(DebugCheck.this,InputChecks.class);
+                startActivity(nxt);
+                break;
+            case R.id.SM_PreviousPage:
+                Intent prev = new Intent(DebugCheck.this,ImplicitIntent.class);
+                startActivity(prev);
                 break;
         }
         return true;
@@ -99,11 +110,11 @@ public class DebugCheck extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         switch(v.getId()){
-            case R.id.num1:
+            case R.id.DC_EditTextNumber:
                 getMenuInflater().inflate(R.menu.floating_menu1,menu);
                 break;
 
-            case R.id.num2:
+            case R.id.DC_EditTextNumber2:
                 getMenuInflater().inflate(R.menu.floating_menu2,menu);
                 break;
         }
@@ -113,19 +124,19 @@ public class DebugCheck extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
-            case R.id.cut:
+            case R.id.FM1_cut:
                 Toast.makeText(DebugCheck.this,"Cut Pressed",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.clear:
+            case R.id.FM1_clear:
                 Toast.makeText(DebugCheck.this,"Clear Pressed",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.copy:
+            case R.id.FM2_copy:
                 Toast.makeText(DebugCheck.this,"Copy Pressed",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.share:
+            case R.id.FM2_share:
                 Toast.makeText(DebugCheck.this,"Share Pressed",Toast.LENGTH_SHORT).show();
                 break;
         }

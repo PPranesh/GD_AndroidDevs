@@ -15,16 +15,16 @@ import android.widget.Toast;
 public class IntentActivity extends AppCompatActivity {
 
     private static final String TAG = "Intent Activity - 3";
-    EditText ed1;
-    Button btn;
+    private EditText ed1;
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent);
 
-        ed1 = (EditText)findViewById(R.id.inputtext);
-        btn = (Button)findViewById(R.id.intentnewPage);
+        ed1 = (EditText)findViewById(R.id.IA_inputtext);
+        btn = (Button)findViewById(R.id.IA_newPage);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,9 +81,20 @@ public class IntentActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
-            case R.id.toast:
-                Toast.makeText(this,"Intent Activity",Toast.LENGTH_SHORT).show();
+
+            case R.id.SM_toastMessage:
+                Toast.makeText(IntentActivity.this,"Intent Page",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                Intent nxt = new Intent(IntentActivity.this,IntentResult.class);
+                startActivity(nxt);
+                break;
+            case R.id.SM_PreviousPage:
+                Intent prev = new Intent(IntentActivity.this,ScrollView.class);
+                startActivity(prev);
                 break;
         }
         return true;

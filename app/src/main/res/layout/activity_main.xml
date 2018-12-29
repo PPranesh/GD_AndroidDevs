@@ -15,7 +15,7 @@
         android:background="@color/colorYellow">
 
         <Button
-            android:id="@+id/topButton"
+            android:id="@+id/MA_IncrementButton"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:onClick="onClick"
@@ -24,7 +24,7 @@
 
 
         <TextView
-            android:id="@+id/number"
+            android:id="@+id/MA_OututDisplay"
             android:layout_width="300dp"
             android:layout_height="250dp"
             android:text="@string/empty"
@@ -53,7 +53,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/simpleTextView"
+        android:id="@+id/MA_ResetButton"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@color/darkBlue"

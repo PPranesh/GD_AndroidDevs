@@ -14,37 +14,34 @@ import android.widget.Toast;
 public class ImplicitIntent extends AppCompatActivity {
 
     private static String TAG = "Implicit Intent - 5";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_implicit_intent);
     }
 
-    public void implicitClick(View view) {
+    public void IMI_OnClick(View view) {
 
         switch(view.getId()){
 
-            case R.id.browser :
-                Intent int1 = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.github.com"));
-                startActivity(int1);
+            case R.id.IMI_browser :
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.github.com")));
                 break;
 
-            case R.id.call :
-                Intent int2 = new Intent(Intent.ACTION_VIEW,Uri.parse("tel:9894697120"));
-                startActivity(int2);
+            case R.id.IMI_call :
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("tel:9894697120")));
                 break;
 
 
-            case R.id.map :
-                Intent int3 = new Intent(Intent.ACTION_VIEW,Uri.parse("geo:37.0902,95.7129"));
-                startActivity(int3);
+            case R.id.IMI_map :
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("geo:37.0902,95.7129")));
                 break;
         }
     }
 
-    public void nxtpgg(View view) {
-        Intent int1 = new Intent(ImplicitIntent.this,DebugCheck.class);
-        startActivity(int1);
+    public void IMI_nextpage(View view) {
+        startActivity(new Intent(ImplicitIntent.this,DebugCheck.class));
     }
 
 
@@ -88,9 +85,18 @@ public class ImplicitIntent extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
-            case R.id.toast:
-                Toast.makeText(this,"Implicit Intent Activity",Toast.LENGTH_SHORT).show();
+
+            case R.id.SM_toastMessage:
+                Toast.makeText(ImplicitIntent.this,"Implicit Intent",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                startActivity(new Intent(ImplicitIntent.this,DebugCheck.class));
+                break;
+            case R.id.SM_PreviousPage:
+                startActivity(new Intent(ImplicitIntent.this,IntentResult.class));
                 break;
         }
         return true;

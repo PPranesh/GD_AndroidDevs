@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="30sp"
-        android:background="@color/lightGreen"
-        android:gravity="center"
+        android:background="@drawable/vossen"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkRed"
         android:text="@string/contacts_layout" />
 
 </FrameLayout>

@@ -5,24 +5,22 @@
     <item
         android:title="@string/settings"
         android:orderInCategory="10"
-        android:id="@+id/m2" />
+        android:id="@+id/OV_Settings" />
     <item
-        android:id="@+id/m1"
-        android:icon="?android:attr/actionModeWebSearchDrawable"
+        android:id="@+id/OV_Search"
         android:title="@string/search"
-
-        app:showAsAction="ifRoom" tools:targetApi="lollipop"/>
+        app:showAsAction="ifRoom" />
     <item
         android:title="@string/prev_page"
         android:orderInCategory="8"
         app:showAsAction="never"
-        android:id="@+id/m3" />
+        android:id="@+id/OV_PreviousPage" />
 
     <item
         android:title="@string/next_page"
         android:orderInCategory="9"
         app:showAsAction="never"
-        android:id="@+id/m4" />
+        android:id="@+id/OV_NextPage" />
 
 
 </menu>

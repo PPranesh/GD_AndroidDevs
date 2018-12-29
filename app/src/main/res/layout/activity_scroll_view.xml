@@ -14,7 +14,7 @@
         android:textSize="20sp" />
 
     <ScrollView
-        android:layout_width="350dp"
+        android:layout_width="500dp"
         android:layout_height="300dp"
         android:layout_margin="60dp">
 
@@ -35,7 +35,7 @@
         android:background="@color/lightGreen"
         android:textColor="@color/colorYellow"
         android:textSize="18sp"
-        android:onClick="PrevPage"
+        android:onClick="SV_PrevPage"
         android:layout_marginStart="20dp"
         />
 
@@ -47,7 +47,7 @@
         android:background="@color/lightGreen"
         android:textColor="@color/colorYellow"
         android:textSize="18sp"
-        android:onClick="NextPage"
+        android:onClick="SV_NextPage"
         android:layout_marginStart="200dp"
         android:text="@string/next_page" />
 

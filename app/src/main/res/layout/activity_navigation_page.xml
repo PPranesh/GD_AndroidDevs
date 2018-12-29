@@ -8,7 +8,7 @@
 
 
     <view
-        android:id="@+id/myTab"
+        android:id="@+id/NP_myTab"
         class="android.support.design.widget.TabLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -17,7 +17,7 @@
         android:background="@color/colorPrimary" />
 
     <view
-        android:id="@+id/myView"
+        android:id="@+id/NP_myView"
         class="android.support.v4.view.ViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -17,20 +17,20 @@
         android:text="@string/implicit_intent" />
 
     <Button
-        android:id="@+id/browser"
+        android:id="@+id/IMI_browser"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/open_browser"
         android:textSize="18sp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:onClick="implicitClick"
+        android:onClick="IMI_OnClick"
         android:background="@color/lightBlue"
         android:textColor="@color/colorYellow"
         android:layout_marginTop="150dp" />
 
     <Button
-        android:id="@+id/call"
+        android:id="@+id/IMI_call"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/open_call"
@@ -38,12 +38,12 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:textColor="@color/colorYellow"
-        android:onClick="implicitClick"
+        android:onClick="IMI_OnClick"
         android:background="@color/lightBlue"
         android:layout_marginTop="220dp" />
 
     <Button
-        android:id="@+id/map"
+        android:id="@+id/IMI_map"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/open_Map"
@@ -52,7 +52,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@color/lightBlue"
-        android:onClick="implicitClick"
+        android:onClick="IMI_OnClick"
         android:layout_marginTop="290dp" />
 
 
@@ -65,7 +65,7 @@
         android:textColor="@color/colorYellow"
         android:layout_marginStart="120dp"
         android:background="@color/lightBlue"
-        android:onClick="nxtpgg"
+        android:onClick="IMI_nextpage"
         android:layout_marginTop="400dp" />
 
 </RelativeLayout>

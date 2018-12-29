@@ -9,9 +9,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorYellow"
+        android:background="@drawable/spiderman"
         android:textSize="30sp"
-        android:gravity="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkBlue"
         android:text="@string/calls_fragment" />
 
 </FrameLayout>

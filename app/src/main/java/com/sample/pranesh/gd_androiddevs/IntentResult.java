@@ -14,14 +14,14 @@ import android.widget.Toast;
 public class IntentResult extends AppCompatActivity {
 
     private static String TAG = "Intent Result Activity - 4";
-    TextView tv1;
+    private TextView tv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent_result);
 
-        tv1 = (TextView)findViewById(R.id.resultfromintent);
+        tv1 = (TextView)findViewById(R.id.IR_textView);
 
         // bundle is the class that is used to pass data between Activities
         // get's data from previous intents
@@ -65,7 +65,7 @@ public class IntentResult extends AppCompatActivity {
         Log.e(TAG,"onResume");
     }
 
-    public void mapActivity(View view) {
+    public void IR_Button(View view) {
         Intent intent = new Intent(IntentResult.this,ImplicitIntent.class);
         startActivity(intent);
     }
@@ -80,9 +80,20 @@ public class IntentResult extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
-            case R.id.toast:
-                Toast.makeText(this,"Intent Result Activity",Toast.LENGTH_SHORT).show();
+
+            case R.id.SM_toastMessage:
+                Toast.makeText(IntentResult.this,"Intent Result",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                Intent nxt = new Intent(IntentResult.this,ImplicitIntent.class);
+                startActivity(nxt);
+                break;
+            case R.id.SM_PreviousPage:
+                Intent prev = new Intent(IntentResult.this,IntentActivity.class);
+                startActivity(prev);
                 break;
         }
         return true;

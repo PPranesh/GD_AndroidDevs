@@ -18,7 +18,7 @@
 
 
     <EditText
-        android:id="@+id/inputtext"
+        android:id="@+id/IA_inputtext"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
@@ -31,7 +31,7 @@
         android:autofillHints="" tools:targetApi="o"/>
 
     <Button
-        android:id="@+id/intentnewPage"
+        android:id="@+id/IA_newPage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"

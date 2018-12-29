@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class ScrollView extends AppCompatActivity {
 
     private static final String TAG = "Scroll View - 2";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +21,12 @@ public class ScrollView extends AppCompatActivity {
 
     }
 
-    public void PrevPage(View v) {
+    public void SV_PrevPage(View v) {
         Intent inten = new Intent(ScrollView.this,MainActivity.class);
         startActivity(inten);
     }
 
-    public void NextPage(View v){
+    public void SV_NextPage(View v){
         Intent intent = new Intent(ScrollView.this,IntentActivity.class);
         startActivity(intent);
     }
@@ -70,9 +71,20 @@ public class ScrollView extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
-            case R.id.toast:
-                Toast.makeText(this,"Scroll Activity",Toast.LENGTH_SHORT).show();
+
+            case R.id.SM_toastMessage:
+                Toast.makeText(ScrollView.this,"Scroll View",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.SM_NextPage:
+                Intent nxt = new Intent(ScrollView.this,IntentActivity.class);
+                startActivity(nxt);
+                break;
+            case R.id.SM_PreviousPage:
+                Intent prev = new Intent(ScrollView.this,MainActivity.class);
+                startActivity(prev);
                 break;
         }
         return true;

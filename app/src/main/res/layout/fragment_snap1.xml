@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="30sp"
-        android:background="@color/lightRed"
-        android:gravity="center"
+        android:background="@drawable/silhouette"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkYellow"
         android:text="@string/logs_fragment" />
 
 </FrameLayout>

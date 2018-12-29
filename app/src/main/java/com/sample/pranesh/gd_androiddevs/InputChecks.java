@@ -26,21 +26,21 @@ public class InputChecks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_checks);
 
-        cb1 = (CheckBox) findViewById(R.id.checkBox1);
-        cb2 = (CheckBox) findViewById(R.id.checkBox2);
-        tg1 = (ToggleButton) findViewById(R.id.toggleButton);
-        rd1 = (RadioButton) findViewById(R.id.radioButton1);
-        rd2 = (RadioButton) findViewById(R.id.radioButton2);
+        cb1 = (CheckBox) findViewById(R.id.IN_checkBox1);
+        cb2 = (CheckBox) findViewById(R.id.IN_checkBox2);
+        tg1 = (ToggleButton) findViewById(R.id.IN_toggleButton);
+        rd1 = (RadioButton) findViewById(R.id.IN_radioButton1);
+        rd2 = (RadioButton) findViewById(R.id.IN_radioButton2);
 
         tg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (tg1.isChecked()) {
-                    Toast.makeText(InputChecks.this, "Toggle is ON", Toast.LENGTH_SHORT).show();
                     tg1.setBackgroundColor(getResources().getColor(R.color.darkGreen));
+                    Toast.makeText(InputChecks.this, "Toggle is ON", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(InputChecks.this, "Toggle is off", Toast.LENGTH_SHORT).show();
                     tg1.setBackgroundColor(getResources().getColor(R.color.darkRed));
+                    Toast.makeText(InputChecks.this, "Toggle is off", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -68,7 +68,7 @@ public class InputChecks extends AppCompatActivity {
         });
     }
 
-    public void dialog(View view) {
+    public void IN_dialog(View view) {
         ProgressDialog pd = new ProgressDialog(this);
         pd.setTitle("Downloading!!");
         pd.setMessage("Please wait..");
@@ -87,8 +87,7 @@ public class InputChecks extends AppCompatActivity {
         pd.show();
     }
 
-
-    public void alertDialog(View view) {
+    public void IN_alertDialog(View view) {
         AlertDialog.Builder ab = new AlertDialog.Builder(this);
         ab.setTitle("Exit");
         ab.setMessage("Want to Exit ? ");
@@ -111,16 +110,16 @@ public class InputChecks extends AppCompatActivity {
     }
 
 
-    public void radioclick(View view) {
+    public void IN_radioclick(View view) {
         if ((rd1.isChecked()) || (rd2.isChecked())) {
 
             switch (view.getId()){
-                case R.id.radioButton1:
+                case R.id.IN_radioButton1:
                     Toast.makeText(InputChecks.this,"Male Selected",Toast.LENGTH_SHORT).show();
                     rd2.setChecked(false);
                     break;
 
-                case R.id.radioButton2:
+                case R.id.IN_radioButton2:
                     Toast.makeText(InputChecks.this,"Female Selected",Toast.LENGTH_SHORT).show();
                     rd1.setChecked(false);
                     break;
@@ -143,21 +142,19 @@ public class InputChecks extends AppCompatActivity {
 
         switch (item.getItemId()){
 
-            case R.id.m1:
+            case R.id.OV_Search:
                 Toast.makeText(InputChecks.this,"Search Icon Selected",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.m2:
+            case R.id.OV_Settings:
                 Toast.makeText(InputChecks.this,"Settings Selected",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.m3:
-                Intent prev = new Intent(InputChecks.this,DebugCheck.class);
-                startActivity(prev);
+            case R.id.OV_PreviousPage:
+                startActivity(new Intent(InputChecks.this,DebugCheck.class));
                 break;
-            case R.id.m4:
-                Intent nxt = new Intent(InputChecks.this,LastPage.class);
-                startActivity(nxt);
+            case R.id.OV_NextPage:
+                startActivity(new Intent(InputChecks.this,NavigationPage.class));
                 break;
         }
 

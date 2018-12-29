@@ -61,13 +61,13 @@ public class NavigationPage extends AppCompatActivity {
         public Fragment getItem(int i) {
 
             if(i == 0){
-                return new snap1_Fragment();
+                return new Fragment1();
             }
             if(i == 1){
-                return new snap2_Fragment();
+                return new Fragment2();
             }
             if(i == 2){
-                return new snap3_Fragment();
+                return new Fragment3();
             }
             return null;
         }

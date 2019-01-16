@@ -11,9 +11,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="@string/intent_s_activity"
         android:layout_marginTop="20dp"
         android:gravity="center"
+        android:text="@string/intent_s_activity"
         android:textSize="22sp" />
 
 
@@ -21,24 +21,27 @@
         android:id="@+id/IA_inputtext"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:gravity="center"
-        android:layout_marginTop="120dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="30dp"
-        android:textSize="22sp"
+        android:autofillHints=""
+        android:gravity="center"
         android:hint="@string/enter_any_name"
         android:inputType=""
-        android:autofillHints="" tools:targetApi="o"/>
+        android:textSize="22sp"
+        tools:targetApi="o" />
 
     <Button
         android:id="@+id/IA_newPage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="30dp"
+        android:freezesText="true"
         android:text="@string/next_page"
-        android:textSize="20sp"
-        android:textColor="@color/lightRed"/>
+        android:textColor="@color/lightRed"
+        android:textSize="28sp"
+        android:visibility="visible" />
 
 </RelativeLayout>

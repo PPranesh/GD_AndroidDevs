@@ -15,8 +15,8 @@
     <string name="result_from_intent">Result from Intent</string>
 
     <string name="implicit_intent">Implicit Intent</string>
-
-
+    <string name="simple">Simple Text</string>
+    <string name="fun">Just for fun<string>
     <string name="open_browser">Open Browser</string>
     <string name="open_Map">Open Map</string>
     <string name="open_call">Open Call</string>

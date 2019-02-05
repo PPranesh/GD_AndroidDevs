@@ -48,4 +48,10 @@
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_2">Fragment 2</string>
     <string name="fragment_3">Fragment 3</string>
+        
+        
+        <string name="fragment_6">Fragment 3</string>
+        <string name="fragment_4">Fragment 3</string>
+        <string name="fragment_5">Fragment 3</string>
+        
 </resources>

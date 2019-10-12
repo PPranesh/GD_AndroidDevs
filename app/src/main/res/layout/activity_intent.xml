@@ -7,7 +7,7 @@
     android:background="@color/colorYellow"
     tools:context=".IntentActivity">
 
-
+    /*  simple text view    */
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
